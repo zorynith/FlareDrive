@@ -1,20 +1,27 @@
 {
-  "name": "flaredrive",
+  "name": "flaredrive", // 默认环境名称
   "compatibility_date": "2025-05-07",
   "main": "./backend/index.ts",
   "assets": {
-    "not_found_handling": "single-page-application",
+    "not_found_handling": "single-page-application" // 移除尾部逗号
   },
   "r2_buckets": [
     {
       "binding": "BUCKET",
       "bucket_name": "drive",
-      "preview_bucket_name": "cloud-epb-preview",
-    },
+      "preview_bucket_name": "cloud-epb-preview" // 移除尾部逗号
+    }
   ],
   "observability": {
     "logs": {
-      "enabled": true,
-    },
+      "enabled": true
+    }
   },
+  // 添加 m 环境配置
+  "env": {
+    "m": {
+      "name": "flaredrive-m", // 覆盖 name 字段
+      // 可在此添加环境特有配置（如不同的 R2 bucket）
+    }
+  }
 }
