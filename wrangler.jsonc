@@ -1,5 +1,5 @@
 {
-  "name": "flaredrive", // 默认环境名称
+  "name": "flaredrive-m", // 默认环境名称
   "compatibility_date": "2025-05-07",
   "main": "./backend/index.ts",
   "assets": {
